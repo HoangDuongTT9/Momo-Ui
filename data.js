@@ -1,9 +1,10 @@
-const data = {
-    name: "HOÀNG TH? HUONG NGUYÊN",
-    contract: "20220712-2904683",
-    debt: "60.435.459d"
-};
+function updateData(){
+  document.getElementById("customerName").innerText =
+      document.getElementById("nameInput").value;
 
-document.getElementById("customerName").innerText = data.name;
-document.getElementById("contract").innerText = data.contract;
-document.getElementById("totalDebt").innerText = data.debt;
+  document.getElementById("contract").innerText =
+      document.getElementById("contractInput").value;
+
+  document.getElementById("totalDebt").innerText =
+      document.getElementById("debtInput").value;
+}
